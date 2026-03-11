@@ -1,0 +1,49 @@
+# Nmap 7.98 scan initiated Wed Mar 11 18:26:00 2026 as: nmap -A -oN scan_results.txt scanme.nmap.org
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.063s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 ac:00:a0:1a:82:ff:cc:55:99:dc:67:2b:34:97:6b:75 (DSA)
+|   2048 20:3d:2d:44:62:2a:b0:5a:9d:b5:b3:05:14:c2:a6:b2 (RSA)
+|   256 96:02:bb:5e:57:54:1c:4e:45:2f:56:4c:4a:24:b2:57 (ECDSA)
+|_  256 33:fa:91:0f:e0:e1:7b:1f:6d:05:a2:b0:f1:54:41:56 (ED25519)
+53/tcp    open  domain     TP-LINK router dnsd
+| dns-nsid: 
+|   NSID: atlt-cns13 (61746c742d636e733133)
+|   id.server: atlt-cns13
+|_  bind.version: [SECURED]
+80/tcp    open  http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: Go ahead and ScanMe!
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-favicon: Nmap Project
+9929/tcp  open  nping-echo Nping echo
+31337/tcp open  tcpwrapped
+Aggressive OS guesses: Linux 5.0 - 5.14 (96%), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3) (96%), OpenWrt 21.02 (Linux 5.4) (94%), Linux 4.15 - 5.19 (94%), Linux 2.6.32 - 3.13 (93%), Linux 5.1 - 5.15 (93%), Linux 6.0 (93%), Linux 4.19 (93%), OpenWrt 22.03 (Linux 5.10) (93%), Linux 2.6.22 - 2.6.36 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 19 hops
+Service Info: OS: Linux; Device: broadband router; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT      ADDRESS
+1   8.00 ms  10.27.140.1
+2   12.00 ms te-0-0-0-8-3925-ssag04.a6atlanta.ga.atlanta.comcast.net (50.217.160.113)
+3   ... 4
+5   19.00 ms ae-163-ar01.b0atlanta.ga.atlanta.comcast.net (96.216.108.233)
+6   23.00 ms be-5101-ar-sp01.b0atlanta.ga.atlanta.comcast.net (162.151.96.105)
+7   7.00 ms  be-33011-cs21.atlanta.ga.ibone.comcast.net (96.110.43.65)
+8   6.00 ms  be-3111-pe11.56marietta.ga.ibone.comcast.net (96.110.40.82)
+9   ...
+10  5.00 ms  ae3.r22.atl02.mag.netarch.akamai.com (23.192.0.106)
+11  9.00 ms  ae2.r22.atl01.icn.netarch.akamai.com (23.192.0.77)
+12  22.00 ms ae5.r21.dfw02.icn.netarch.akamai.com (23.32.62.137)
+13  73.00 ms ae18.r01.sjc01.icn.netarch.akamai.com (23.32.62.143)
+14  80.00 ms ae1.r12.sjc01.ien.netarch.akamai.com (23.207.232.37)
+15  58.00 ms ae22.gw4.scz1.netarch.akamai.com (23.203.158.53)
+16  ... 18
+19  66.00 ms scanme.nmap.org (45.33.32.156)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 11 18:26:28 2026 -- 1 IP address (1 host up) scanned in 28.28 seconds
